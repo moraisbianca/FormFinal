@@ -42,12 +42,29 @@ namespace ProjetoFinal
             try
             {
                 AbrirConexao();
-                Comando = new MySqlCommand("CREATE DATABASE IF NOT EXISTS vendas; USE  vendas;", Conexao);
+                Comando = new MySqlCommand("CREATE DATABASE IF NOT EXISTS vendas;", Conexao);
                 Comando.ExecuteNonQuery();
 
-                Comando = new MySqlCommand("create table if not exists cidades" +
-                                            "(id int auto_increment primary key," +
-                                            "nome char(40), uf char(2))", Conexao);
+                Comando = new MySqlCommand("USE vendas;", Conexao);
+                Comando.ExecuteNonQuery();
+
+                Comando = new MySqlCommand("create table if not exists cidades(" +
+                                            "id int auto_increment," +
+                                            "nome varchar(40)," + 
+                                            "uf char(2)," + 
+                                            "primary key (id));", Conexao);
+                Comando.ExecuteNonQuery();
+
+                Comando = new MySqlCommand("create table if not exists marcas(" +
+                                            "id int auto_increment," +
+                                            "marca varchar(40)," +
+                                            "primary key (id));", Conexao);
+                Comando.ExecuteNonQuery();
+
+                Comando = new MySqlCommand("create table if not exists categorias(" +
+                                            "id int auto_increment," +
+                                            "categoria varchar(20)," +
+                                            "primary key (id));", Conexao);
                 Comando.ExecuteNonQuery();
 
                 FecharConexao();

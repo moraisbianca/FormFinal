@@ -33,3 +33,38 @@ D:\Bibi 2 DS\DS\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.csproj.CopyComp
 D:\Bibi 2 DS\DS\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.exe
 D:\Bibi 2 DS\DS\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.pdb
 D:\Bibi 2 DS\DS\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.Views.FormCidades.resources
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\ProjetoFinal.exe.config
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\ProjetoFinal.exe
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\ProjetoFinal.pdb
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\BouncyCastle.Crypto.dll
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\Google.Protobuf.dll
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\K4os.Compression.LZ4.dll
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\K4os.Compression.LZ4.Streams.dll
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\K4os.Hash.xxHash.dll
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\MySql.Data.dll
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\System.Buffers.dll
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\System.Memory.dll
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\System.Numerics.Vectors.dll
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\ZstdNet.dll
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\BouncyCastle.Crypto.xml
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\Google.Protobuf.pdb
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\Google.Protobuf.xml
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\K4os.Compression.LZ4.xml
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\K4os.Compression.LZ4.Streams.xml
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\K4os.Hash.xxHash.xml
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\MySql.Data.xml
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\System.Buffers.xml
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\System.Memory.xml
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\System.Numerics.Vectors.xml
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.csproj.AssemblyReference.cache
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.csproj.SuggestedBindingRedirects.cache
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.FormMenu.resources
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.Properties.Resources.resources
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.Views.FormCidades.resources
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.csproj.GenerateResource.cache
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.csproj.CoreCompileInputs.cache
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.csproj.CopyComplete
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.exe
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.pdb

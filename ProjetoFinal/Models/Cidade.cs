@@ -17,7 +17,10 @@ namespace ProjetoFinal.Models
             try
             {
                 Banco.AbrirConexao();
-                Banco.Comando = new MySqlCommand("INSERT INTO cidades (nome, uf) VALUES (@nome, @uf)", Banco.Conexao);
+                Banco.Comando = new MySqlCommand("USE vendas;", Banco.Conexao);
+                Banco.Comando.ExecuteNonQuery();
+
+                Banco.Comando = new MySqlCommand("INSERT INTO cidades (nome, uf) VALUES (@nome, @uf);", Banco.Conexao);
 
                 Banco.Comando.Parameters.AddWithValue("@nome", nome);
                 Banco.Comando.Parameters.AddWithValue("@uf", uf);
@@ -36,7 +39,11 @@ namespace ProjetoFinal.Models
             try
             {
                 Banco.AbrirConexao();
-                Banco.Comando = new MySqlCommand("UPDATE cidades SET nome = @nome, uf = @uf WHERE id = @id", Banco.Conexao);
+                Banco.Comando = new MySqlCommand("USE vendas;", Banco.Conexao);
+                Banco.Comando.ExecuteNonQuery();
+
+                Banco.Comando = new MySqlCommand("UPDATE cidades SET nome = @nome, uf = @uf" + 
+                                                 "WHERE id = @id;", Banco.Conexao);
 
                 Banco.Comando.Parameters.AddWithValue("@nome", nome);
                 Banco.Comando.Parameters.AddWithValue("@uf", uf);
@@ -57,8 +64,10 @@ namespace ProjetoFinal.Models
             try
             {
                 Banco.AbrirConexao();
+                Banco.Comando = new MySqlCommand("USE vendas;", Banco.Conexao);
+                Banco.Comando.ExecuteNonQuery();
 
-                Banco.Comando = new MySqlCommand("DELETE FROM cidades WHERE id = @id", Banco.Conexao);
+                Banco.Comando = new MySqlCommand("DELETE FROM cidades WHERE id = @id;", Banco.Conexao);
                 Banco.Comando.Parameters.AddWithValue("@id", id);
                 Banco.Comando.ExecuteNonQuery();
 
@@ -75,9 +84,11 @@ namespace ProjetoFinal.Models
             try
             {
                 Banco.AbrirConexao();
+                Banco.Comando = new MySqlCommand("USE vendas;", Banco.Conexao);
+                Banco.Comando.ExecuteNonQuery();
 
                 Banco.Comando = new MySqlCommand("SELECT * FROM cidades WHERE nome like @nome" +
-                                                 "order by nome", Banco.Conexao);
+                                                 "order by nome;", Banco.Conexao);
                 Banco.Comando.Parameters.AddWithValue("@nome", nome + "%");
 
                 Banco.Adaptador = new MySqlDataAdapter(Banco.Comando);

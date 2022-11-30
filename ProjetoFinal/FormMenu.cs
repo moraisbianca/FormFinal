@@ -21,5 +21,17 @@ namespace ProjetoFinal
             FormCidades form = new FormCidades();
             form.Show();
         }
+
+        private void marcasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormMarcas form = new FormMarcas();
+            form.Show();
+        }
+
+        private void categoriasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            FormCategorias form = new FormCategorias();
+            form.Show();
+        }
     }
 }

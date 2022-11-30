@@ -68,3 +68,5 @@ D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\De
 D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.csproj.CopyComplete
 D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.exe
 D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.pdb
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.Views.FormCategorias.resources
+D:\Bibi 2 DS\DS\Projetos para nota\4° Bimestre\ProjetoFinal\ProjetoFinal\obj\Debug\ProjetoFinal.Views.FormMarcas.resources

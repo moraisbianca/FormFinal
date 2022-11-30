@@ -208,7 +208,6 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.ControlBox = false;
             this.Controls.Add(this.btnFechar);
             this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btnCancelar);
@@ -247,9 +246,9 @@
         private System.Windows.Forms.Button btnAlterar;
         private System.Windows.Forms.Button btnCancelar;
         private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.Button btnFechar;
         private System.Windows.Forms.DataGridView dgvCidades;
         private System.Windows.Forms.Label lblPesquisar;
         private System.Windows.Forms.Button btnPesquisar;
+        private System.Windows.Forms.Button btnFechar;
     }
 }

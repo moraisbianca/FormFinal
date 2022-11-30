@@ -1,49 +1,65 @@
-﻿using System;
+﻿using ProjetoFinal.Models;
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 using System.Windows.Forms;
-using ProjetoFinal.Models;
 
 namespace ProjetoFinal.Views
 {
-    public partial class FormCidades : Form
+    public partial class FormCategorias : Form
     {
-        Cidade c;
-        public FormCidades()
+        Categoria c;
+        public FormCategorias()
         {
             InitializeComponent();
+            CarregarGrid("");
         }
 
         void LimparControles()
         {
             txtID.Clear();
-            txtNome.Clear();
-            txtUF.Clear();
+            txtCategoria.Clear();
             txtPesquisar.Clear();
         }
 
         void CarregarGrid(string pesquisa)
         {
-            c = new Cidade()
+            c = new Categoria()
             {
-                nome = pesquisa
+                categoria = pesquisa
             };
 
-            dgvCidades.DataSource = c.Consultar();
+            dgvCategoria.DataSource = c.Consultar();
         }
 
-        private void FormCidades_Load(object sender, EventArgs e)
+        private void FormCategorias_Load(object sender, EventArgs e)
         {
             LimparControles();
             CarregarGrid("");
         }
 
+        private void dgvCategoria_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dgvCategoria.RowCount > 0)
+            {
+                txtID.Text = dgvCategoria.CurrentRow.Cells["id"].Value.ToString();
+                txtCategoria.Text = dgvCategoria.CurrentRow.Cells["categoria"].Value.ToString();
+
+            }
+        }
+
         private void btnIncluir_Click(object sender, EventArgs e)
         {
-            if (txtNome.Text == String.Empty) return;
+            if (txtCategoria.Text == String.Empty) return;
 
-            c = new Cidade()
+            c = new Categoria()
             {
-                nome = txtNome.Text,
-                uf = txtUF.Text
+                categoria = txtCategoria.Text,
             };
             c.Incluir();
 
@@ -51,26 +67,14 @@ namespace ProjetoFinal.Views
             CarregarGrid("");
         }
 
-        private void dgvCidades_CellClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (dgvCidades.RowCount > 0)
-            {
-                txtID.Text = dgvCidades.CurrentRow.Cells["id"].Value.ToString();
-                txtNome.Text = dgvCidades.CurrentRow.Cells["nome"].Value.ToString();
-                txtUF.Text = dgvCidades.CurrentRow.Cells["uf"].Value.ToString();
-
-            }
-        }
-
         private void btnAlterar_Click(object sender, EventArgs e)
         {
             if (txtID.Text == String.Empty) return;
 
-            c = new Cidade()
+            c = new Categoria()
             {
                 id = int.Parse(txtID.Text),
-                nome = txtNome.Text,
-                uf = txtUF.Text
+                categoria = txtCategoria.Text,
             };
             c.Alterar();
 
@@ -78,14 +82,20 @@ namespace ProjetoFinal.Views
             CarregarGrid("");
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimparControles();
+            CarregarGrid("");
+        }
+
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            if(txtID.Text == "") return;
+            if (txtID.Text == "") return;
 
-            if (MessageBox.Show("Deseja excluir a cidade?", "Exclusão",
+            if (MessageBox.Show("Deseja excluir a categoria?", "Exclusão",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                c = new Cidade()
+                c = new Categoria()
                 {
                     id = int.Parse(txtID.Text)
                 };
@@ -96,12 +106,6 @@ namespace ProjetoFinal.Views
                 CarregarGrid("");
 
             }
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            LimparControles();
-            CarregarGrid("");
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)

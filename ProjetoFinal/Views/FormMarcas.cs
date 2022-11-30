@@ -4,10 +4,10 @@ using ProjetoFinal.Models;
 
 namespace ProjetoFinal.Views
 {
-    public partial class FormCidades : Form
+    public partial class FormMarcas : Form
     {
-        Cidade c;
-        public FormCidades()
+        Marca c;
+        public FormMarcas()
         {
             InitializeComponent();
         }
@@ -15,22 +15,21 @@ namespace ProjetoFinal.Views
         void LimparControles()
         {
             txtID.Clear();
-            txtNome.Clear();
-            txtUF.Clear();
+            txtMarca.Clear();
             txtPesquisar.Clear();
         }
 
         void CarregarGrid(string pesquisa)
         {
-            c = new Cidade()
+            c = new Marca()
             {
-                nome = pesquisa
+                marca = pesquisa
             };
 
-            dgvCidades.DataSource = c.Consultar();
+            dgvMarcas.DataSource = c.Consultar();
         }
 
-        private void FormCidades_Load(object sender, EventArgs e)
+        private void FormMarcas_Load(object sender, EventArgs e)
         {
             LimparControles();
             CarregarGrid("");
@@ -38,12 +37,11 @@ namespace ProjetoFinal.Views
 
         private void btnIncluir_Click(object sender, EventArgs e)
         {
-            if (txtNome.Text == String.Empty) return;
+            if (txtMarca.Text == String.Empty) return;
 
-            c = new Cidade()
+            c = new Marca()
             {
-                nome = txtNome.Text,
-                uf = txtUF.Text
+                marca = txtMarca.Text,
             };
             c.Incluir();
 
@@ -51,13 +49,12 @@ namespace ProjetoFinal.Views
             CarregarGrid("");
         }
 
-        private void dgvCidades_CellClick(object sender, DataGridViewCellEventArgs e)
+        private void dgvMarcas_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (dgvCidades.RowCount > 0)
+            if (dgvMarcas.RowCount > 0)
             {
-                txtID.Text = dgvCidades.CurrentRow.Cells["id"].Value.ToString();
-                txtNome.Text = dgvCidades.CurrentRow.Cells["nome"].Value.ToString();
-                txtUF.Text = dgvCidades.CurrentRow.Cells["uf"].Value.ToString();
+                txtID.Text = dgvMarcas.CurrentRow.Cells["id"].Value.ToString();
+                txtMarca.Text = dgvMarcas.CurrentRow.Cells["marca"].Value.ToString();
 
             }
         }
@@ -66,11 +63,10 @@ namespace ProjetoFinal.Views
         {
             if (txtID.Text == String.Empty) return;
 
-            c = new Cidade()
+            c = new Marca()
             {
                 id = int.Parse(txtID.Text),
-                nome = txtNome.Text,
-                uf = txtUF.Text
+                marca = txtMarca.Text,
             };
             c.Alterar();
 
@@ -78,14 +74,20 @@ namespace ProjetoFinal.Views
             CarregarGrid("");
         }
 
+        private void btnCancelar_Click(object sender, EventArgs e)
+        {
+            LimparControles();
+            CarregarGrid("");
+        }
+
         private void btnExcluir_Click(object sender, EventArgs e)
         {
-            if(txtID.Text == "") return;
+            if (txtID.Text == "") return;
 
-            if (MessageBox.Show("Deseja excluir a cidade?", "Exclusão",
+            if (MessageBox.Show("Deseja excluir a marca?", "Exclusão",
                 MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
-                c = new Cidade()
+                c = new Marca()
                 {
                     id = int.Parse(txtID.Text)
                 };
@@ -96,12 +98,6 @@ namespace ProjetoFinal.Views
                 CarregarGrid("");
 
             }
-        }
-
-        private void btnCancelar_Click(object sender, EventArgs e)
-        {
-            LimparControles();
-            CarregarGrid("");
         }
 
         private void btnPesquisar_Click(object sender, EventArgs e)
